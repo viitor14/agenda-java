@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="idVboxMain" alignment="CENTER" spacing="20.0"  xmlns:fx="http://javafx.com/fxml/" fx:controller="br.project.agenda.controllers.QuartiaryController">
+   <children>
+      <AnchorPane fx:id="idAnchorPane">
+         <children>
+            <VBox fx:id="idVboxQuartiary" alignment="CENTER">
+               <children>
+                  <Label text="EDITAR CONTATOS" textFill="#00ff44">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox fx:id="idHbox" alignment="CENTER">
+                     <children>
+                        <Label text="Informe Qual Contato Você Quer Editar: " textFill="WHITE" />
+                        <TextField fx:id="inputContato" onKeyReleased="#getValueInput" prefHeight="10.0" prefWidth="149.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <Button fx:id="idButtonSalvar" layoutY="300.0" mnemonicParsing="false" onAction="#switchToClose" style="-fx-background-color: rgba(245, 255, 251, 1);" text="Salvar">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
